@@ -62,7 +62,7 @@
 							</li>
 
 							<li >
-								<button>Login</button>
+								<button  @click="login">Login</button>
 							</li>
 						</ul>
 					</nav>
@@ -256,7 +256,8 @@
 
 
 							<li >
-								<button >Login</button>
+								<button @click="login" >Login</button>
+								
 							</li>
 							</ul>
 						</nav>
@@ -269,6 +270,26 @@
 			</div>
 		</div>
 	</header>
+
+	<Login/>
     </div>
 </template>
+
+<script >
+
+import Login from '../LoginRegistr/Login.vue';
+export default ({
+	
+
+	methods:{
+		 login(){
+			// console.log("jhafvjv ");
+		}
+	},
+	components:{
+		"Login":Login
+	}
+})
+</script>
+
 
