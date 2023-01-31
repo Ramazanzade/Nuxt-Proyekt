@@ -60,6 +60,10 @@
 									<li><NuxtLink to="/PortfolioSingle">Portfolio Details</NuxtLink></li>
 								</ul>
 							</li>
+
+							<li >
+								<button>Login</button>
+							</li>
 						</ul>
 					</nav>
 				</div>
@@ -248,6 +252,11 @@
 									<li><NuxtLink to="/Portfolio">Portfolio</NuxtLink></li>
 									<li><NuxtLink to="/PortfolioSingle">Portfolio Details</NuxtLink></li>
 								</ul>
+							</li>
+
+
+							<li >
+								<button >Login</button>
 							</li>
 							</ul>
 						</nav>
