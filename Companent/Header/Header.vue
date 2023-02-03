@@ -20,6 +20,7 @@
 									<li><NuxtLink to="/ShopSingle">Shop Details</NuxtLink></li>
 									<li> <NuxtLink to="/Cart">Cart Page</NuxtLink></li>
 									<li><NuxtLink to="/Checkout">Check Out Page</NuxtLink></li>
+									<li><NuxtLink to="/ShopProductAdd">Shop Product Add</NuxtLink></li>
 								</ul>
 							</li>
 							<li class="dropdown">
@@ -61,9 +62,7 @@
 								</ul>
 							</li>
 
-							<li >
-								<button  @click="login">Login</button>
-							</li>
+							
 						</ul>
 					</nav>
 				</div>
@@ -212,7 +211,7 @@
 										<li><NuxtLink to="/Shop">Shop Page </NuxtLink></li>
 									<li><NuxtLink to="/ShopSingle">Shop Details</NuxtLink></li>
 									<li> <NuxtLink to="/Cart">Cart Page</NuxtLink></li>
-									<li><NuxtLink to="/Checkout">Check Out Page</NuxtLink></li>
+									<li><NuxtLink to="/ShopProductAdd">Shop Product Add</NuxtLink></li>
 									</ul>
 								</li>
 								<li class="dropdown">
@@ -254,11 +253,6 @@
 								</ul>
 							</li>
 
-
-							<li >
-								<button @click="login" >Login</button>
-								
-							</li>
 							</ul>
 						</nav>
 
@@ -269,27 +263,19 @@
 				</div>
 			</div>
 		</div>
+		<Login/>
 	</header>
 
-	<Login/>
-    </div>
+
+
+	</div>
 </template>
 
-<script >
 
-import Login from '../LoginRegistr/Login.vue';
-export default ({
-	
 
-	methods:{
-		 login(){
-			// console.log("jhafvjv ");
-		}
-	},
-	components:{
-		"Login":Login
-	}
-})
-</script>
+
+
+
+
 
 

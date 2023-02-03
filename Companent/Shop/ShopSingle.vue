@@ -1,3 +1,4 @@
+
 <template>
     <div class="ori-inner-page">
         <Header/>
@@ -336,3 +337,6 @@ import Sidebar from '~~/Companent/Sidebar/Sidebar.vue'
 import Footer from '~~/Companent/Footer/Footer.vue'
 
 </script>
+
+
+

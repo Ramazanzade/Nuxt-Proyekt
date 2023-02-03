@@ -1,3 +1,7 @@
+
+
+
+
 <template>
     <div class="ori-inner-page">
         <Header/>
@@ -44,7 +48,7 @@
 							</div>
 							<div class="ori-shop-feed-post-items">
 								<div class="row">
-									<div class="col-md-4">
+									<!-- <div class="col-md-4">
 										<div class="ori-shop-inner-item text-center">
 											<div class="shop-img-cart-btn position-relative">
 												<div class="shop-img">
@@ -188,7 +192,26 @@
 												<span class="pro_price">$100.00</span>
 											</div>
 										</div>
-									</div>
+									</div> -->
+
+
+
+									<div class="col-md-4"  v-for="key of addproductgetters.allproductgetters" :key="key">
+										<div class="ori-shop-inner-item text-center">
+											<div class="shop-img-cart-btn position-relative">
+												<div class="shop-img">
+													<img src="https://html.themexriver.com/Orixy/assets/img/shop/shop9.png" alt="">
+												</div>
+												<div class="add-cart-btn text-uppercase text-center">
+													<a href="https://html.themexriver.com/Orixy/cart.html">add to cart</a>
+												</div>
+											</div>
+											<div class="shop-text">
+												<h3><a href="https://html.themexriver.com/Orixy/shop-single.html">{{ key.name }} </a></h3>
+												<span class="pro_price">${{ key.price }}</span>
+											</div>
+										</div>
+									</div> -->
 								</div>
 							</div>
 						</div>
@@ -295,5 +318,22 @@ import Header from '~~/Companent/Header/Header.vue'
 import Search from '~~/Companent/Search/Search.vue'
 import Sidebar from '~~/Companent/Sidebar/Sidebar.vue'
 import Footer from '~~/Companent/Footer/Footer.vue'
+import { mapGetters } from 'vuex'
+import { createDOMCompilerError } from '@vue/compiler-dom'
+
+</script>
+
+<script>
+export default {
+	computed:{
+		...mapGetters(['addproductgetters'])
+	},
+	created(){
+	this.$store.dispatch('getproduct')
+}
+}
+
+
+
 
 </script>

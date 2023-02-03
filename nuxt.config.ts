@@ -31,6 +31,7 @@ export default defineNuxtConfig({
                 { href: '/assets/css/global.css' ,rel:"stylesheet" },
                 { href: '/assets/css/style.css' ,rel:"stylesheet" },
                 
+                
 
                 {
                     href: "https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js",
@@ -63,6 +64,7 @@ export default defineNuxtConfig({
                 {src:'/assets/js/jquery.magnific-popup.min.js'},
                 {src:'/assets/js/jquery.marquee.min.js'},
                 {src:'/assets/js/script.js'},
+                {src:"https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" }
                 
             ]
         }
